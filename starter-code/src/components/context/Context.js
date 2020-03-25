@@ -23,7 +23,6 @@ export const FoodContextProvider = props => {
   };
 
   const addTodaysFood = food => {
-    const { name, calories, quantity } = food;
     setTodaysFood([...todaysFood, food]);
   };
 
@@ -46,6 +45,7 @@ export const FoodContextProvider = props => {
         addFood,
         searchFood,
         todaysFood,
+        setTodaysFood,
         addTodaysFood,
         addQuantity,
         deleteFood

@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { FoodContext } from "./context/Context";
 
 export const TodaysFood = () => {
-  const { todaysFood, deleteFood } = useContext(FoodContext);
+  const { todaysFood, deleteFood, setTodaysFood } = useContext(FoodContext);
 
   const handleDelete = e => {
     deleteFood(e.currentTarget.getAttribute("food"));

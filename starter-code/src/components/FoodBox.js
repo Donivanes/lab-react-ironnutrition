@@ -3,7 +3,6 @@ import { FoodContext } from "./context/Context";
 
 export const FoodBox = () => {
   const { allFood, addTodaysFood, addQuantity } = useContext(FoodContext);
-  const [foodQuantity, setFoodQuantity] = useState(1);
 
   return (
     <>
